@@ -25,6 +25,10 @@
 - HelloResponseDto.java
     - 역할 : API 응답 시 데이터를 담는 객체
 
+## 어노테이션이란
+어노테이션(Annotation)은 Java 코드에 메타데이터(metadata)를 추가하는 방법입니다. @ 기호로 시작하며, 컴파일러나 프레임워크에게 특별한 정보를 제공합니다.
+
+
 참고링크
 
 - [교재 깃헙 레포지토리](https://github.com/jojoldu/freelec-springboot2-webservice)
