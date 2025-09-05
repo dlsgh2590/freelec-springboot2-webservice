@@ -1,6 +1,7 @@
 package com.jojoldu.book.springboot.web;
 
 // JUnit 5 관련 import
+import com.jojoldu.book.springboot.web.dto.PostsUpdateRequestDto;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 // Spring Boot 3.2에서는 @ExtendWith(SpringExtension.class) 불필요 - @SpringBootTest가 자동 처리
@@ -104,7 +105,7 @@ public class PostsApiControllerTest {
         assertThat(all.get(0).getTitle()).isEqualTo(title);       // 제목 확인
         assertThat(all.get(0).getContent()).isEqualTo(content);   // 내용 확인
     }
-/*
+
     @Test
     public void Posts_수정된다() throws Exception {
         //given
@@ -135,5 +136,4 @@ public class PostsApiControllerTest {
         assertThat(all.get(0).getTitle()).isEqualTo(expectedTitle);
         assertThat(all.get(0).getContent()).isEqualTo(expectedContent);
     }
-*/
 }
