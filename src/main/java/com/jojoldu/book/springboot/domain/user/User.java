@@ -12,10 +12,12 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Getter
 @NoArgsConstructor
 @Entity
+@Table(name = "users") // 테이블 명을 user로 변경
 public class User extends BaseTimeEntity {
 
     @Id
